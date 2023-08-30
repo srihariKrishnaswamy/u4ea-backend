@@ -14,6 +14,8 @@ const PORT = process.env.PORT || 3500
 
 console.log(process.env.NODE_ENV)
 
+app.set('trust proxy', 1); // only for deployment i think
+
 connectDB()
 
 app.use(logger)
